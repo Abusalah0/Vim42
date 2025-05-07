@@ -1,7 +1,7 @@
 
-# 42Amman Vim Configuration
+# Vim42 Configuration
 
-> ⚙️ A customized Vim setup designed for efficient development at Ecole 42 and beyond, developed by students, with full integration for Norminette, Git, snippets, fuzzy search, smooth scrolling, and more.
+> ⚙️  A customized Vim setup designed for efficient development at Ecole 42 and beyond, developed by students, with full integration for Norminette, Git, snippets, fuzzy search, smooth scrolling, and more.
 
 ```
 ===========================================================
@@ -113,3 +113,8 @@ Uses the `nord` colorscheme with overridden highlights for vivid C development c
 
 - [`norminette`](https://github.com/42School/norminette)
 - `gcc`, `ctags`, `ripgrep`
+
+Disclaimers:
+- This configuration was tailored by students and is not an official 42 configuration.
+- This configuration is a work in progress and may not be fully optimized. Contributions and suggestions are welcome!
+```
