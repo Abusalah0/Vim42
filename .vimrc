@@ -9,7 +9,6 @@ Plug 'preservim/nerdtree'
 " Fuzzy finder core and Vim integration
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-nnoremap <leader><f> :Files<CR>
 
 " Commenting utility CC anything
 Plug 'tpope/vim-commentary'
@@ -100,6 +99,8 @@ set clipboard=unnamedplus
 " Toggle NERDTree with <leader>ft (space + f + t)
 nnoremap <leader>ft :NERDTreeToggle<CR>
 
+"Open fzf file finder with <leader>ff (space + f + f)
+nnoremap <leader>ff :Files<CR>
 " Window navigation with Alt + arrow keys
 nnoremap <A-Left>  <C-w>h
 nnoremap <A-Right> <C-w>l
