@@ -1,7 +1,7 @@
 
 # 42core Vim Configuration
 
-> ⚙️ A customized Vim setup designed for efficient development at Ecole 42 and beyond, with full integration for Norminette, Git, snippets, fuzzy search, smooth scrolling, and more.
+> ⚙️ A customized Vim setup designed for efficient development at Ecole 42 and beyond, developed by students, with full integration for Norminette, Git, snippets, fuzzy search, smooth scrolling, and more.
 
 ```
 ===========================================================
@@ -106,19 +106,6 @@ Uses the `nord` colorscheme with overridden highlights for vivid C development c
 :PlugInstall
 ```
 3. Done!
-
----
-
-## 📂 Suggested Repo Structure
-
-```
-42core/
-├── .vimrc
-├── README.md
-├── include/
-├── libft/
-└── src/
-```
 
 ---
 
