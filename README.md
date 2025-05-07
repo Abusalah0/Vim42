@@ -60,7 +60,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 | Mode | Keys                  | Action                                      |
 |------|------------------------|---------------------------------------------|
 | Normal | `<leader>ft`         | Toggle NERDTree                             |
-| Normal | `<leader><f>`        | Open FZF file search                        |
+| Normal | `<leader><ff>`        | Open FZF file search                        |
 | Normal | `cc`                 | Comment/uncomment line                      |
 | Visual | `cc`                | Comment/uncomment selected lines            |
 | Normal | `<A-Left>`           | Move to left window                         |
