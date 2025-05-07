@@ -94,12 +94,6 @@ Feel free to open issues or submit pull requests to improve this configuration!
 
 ---
 
-## License
-
-This repository is open source and available under the [MIT License](LICENSE).
-
----
-
 ## Acknowledgements
 
 Thanks to the authors and maintainers of all the wonderful Vim plugins included in this configuration.
