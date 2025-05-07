@@ -6,13 +6,21 @@ call plug#begin('~/.vim/plugged')
 " File explorer
 Plug 'preservim/nerdtree'
 
+" Fuzzy finder core and Vim integration
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+nnoremap <leader><f> :Files<CR>
+
 " Commenting utility CC anything
 Plug 'tpope/vim-commentary'
 nmap cc <Plug>Commentary
 xmap cc <Plug>Commentary
 
-" Surround text objects easily (quotes, brackets, etc.)
-Plug 'tpope/vim-surround'
+" Snippets and snippets engine
+Plug 'mhinz/vim-startify'
+
+" Auto-pairs for brackets, quotes, etc.
+Plug 'jiangmiao/auto-pairs'
 
 " Git integration
 Plug 'tpope/vim-fugitive'
@@ -121,6 +129,50 @@ let g:NERDTreeQuitOnOpen = 1
 let g:smooth_scroll_hide_cursor = 1
 
 " ============================
+" 42 Norminette Integration
+" ============================
+
+" Install Norminette checker and Syntastic
+Plug 'vim-syntastic/syntastic'
+Plug 'alexandregv/norminette-vim'
+nnoremap <leader>nn :!norminette %<CR>
+
+" Enable Norminette and GCC checkers for C
+let g:syntastic_c_checkers = ['norminette', 'gcc']
+
+" Aggregate errors from all checkers
+let g:syntastic_aggregate_errors = 1
+
+" Path to norminette executable (adjust if not in PATH)
+let g:syntastic_c_norminette_exec = 'norminette'
+
+" Support header files (.h)
+let g:c_syntax_for_h = 1
+
+" Include common include directories for header checks
+let g:syntastic_c_include_dirs = ['include', '../include', '../../include', 'libft', '../libft/include', '../../libft/include']
+
+" (Optional) Ignore 42 header check if you want, otherwise remove this line
+let g:syntastic_c_norminette_args = '-R CheckTopCommentHeader'
+
+" Check for errors on file open
+let g:syntastic_check_on_open = 1
+
+" Always show errors in location list
+let g:syntastic_always_populate_loc_list = 1
+
+" Automatically open error list window
+let g:syntastic_auto_loc_list = 1
+
+" Don't check on write-quit
+let g:syntastic_check_on_wq = 0
+
+" Show errors and warnings with custom symbols
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
+
+
+" ============================
 " Colorscheme and Appearance
 " ============================
 
@@ -161,6 +213,39 @@ highlight VertSplit    guifg=#40506B guibg=#1F2430
 highlight StatusLine   guibg=#2B3345 guifg=#F7FAFD
 highlight Pmenu        guibg=#2B3345 guifg=#E6EBF5
 highlight PmenuSel     guibg=#7FD6D1 guifg=#1F2430 gui=bold
+
+" ============================
+" Startify Configuration
+" ============================
+
+" Order of sections on the Startify screen
+let g:startify_list_order = ['commands', 'sessions', 'files', 'dir']
+
+" Custom commands (for FZF)
+let g:startify_commands = [
+      \ { 'f': [ 'Find Files (FZF)', 'Files' ] }
+      \ ]
+
+" Optional: Custom Startify header (ASCII art)
+let g:startify_custom_header = [
+      \ '===========================================================',
+      \ '██████      ██████     ██████████████████████████',
+      \ '██████      ██████     ██████████████████████████',
+      \ '██████      ██████     ██████              ██████',
+      \ '██████      ██████     ██████              ██████',
+      \ '██████      ██████                         ██████',
+      \ '██████      ██████                         ██████',
+      \ '██████      ██████     Amman               ██████',
+      \ '██████████████████                         ██████',
+      \ '██████████████████       ████████████████████████',
+      \ '██████████████████       ████████████████████████',
+      \ '            ██████       ██████',
+      \ '            ██████       ████████████████████████',
+      \ '            ██████       ████████████████████████'
+      \ ]
+
+" Only show Startify when opening Vim with no files
+autocmd VimEnter * if argc() == 0 | Startify | endif
 
 " ============================
 " Recommended Additional Plugins (Optional)
