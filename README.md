@@ -1,5 +1,5 @@
 
-# 42core Vim Configuration
+# 42Amman Vim Configuration
 
 > ⚙️ A customized Vim setup designed for efficient development at Ecole 42 and beyond, developed by students, with full integration for Norminette, Git, snippets, fuzzy search, smooth scrolling, and more.
 
