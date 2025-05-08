@@ -1,4 +1,6 @@
 
+Millions of years ago, a race of hyper-intelligent beings built the most powerful computer ever conceived—Deep Thought—to answer the greatest mystery of all: What is the meaning of life, the universe, and everything? After eons of humming, blinking, and thinking (very deeply), Deep Thought finally emerged from its contemplative trance and declared the answer was… 42. The architects were stunned. “Forty-two what?” they asked. Deep Thought blinked again and shrugged—in its very supercomputer way. You see, it had given the answer, but no one had ever figured out the question. And so began the most wonderfully ridiculous search for meaning in the galaxy: not for life itself, but for the question that made 42 the answer. It’s a brilliant cosmic punchline, reminding us that maybe the universe isn’t just strange—it’s in on the joke.
+
 # Vim42 Configuration
 
 > ⚙️  A customized Vim setup designed for efficient development at Ecole 42 and beyond, developed by students, with full integration for Norminette, Git, snippets, fuzzy search, smooth scrolling, and more.
@@ -11,7 +13,7 @@
 ██████      ██████     ██████              ██████
 ██████      ██████                         ██████
 ██████      ██████                         ██████
-██████      ██████     Amman               ██████
+██████      ██████     Vim                 ██████
 ██████████████████                         ██████
 ██████████████████       ████████████████████████
 ██████████████████       ████████████████████████
