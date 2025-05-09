@@ -65,6 +65,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 | Normal | `<leader><ff>`        | Open FZF file search                        |
 | Normal | `cc`                 | Comment/uncomment line                      |
 | Visual | `cc`                | Comment/uncomment selected lines            |
+| Normal | < ` >                | toggle Copilot On-Off                       |
 | Normal | `<A-Left>`           | Move to left window                         |
 | Normal | `<A-Right>`          | Move to right window                        |
 | Normal | `<A-Up>`             | Move to upper window                        |
