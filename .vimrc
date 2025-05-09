@@ -129,6 +129,25 @@ let g:NERDTreeQuitOnOpen = 1
 " Enable vim-smooth-scroll plugin defaults (optional tuning)
 let g:smooth_scroll_hide_cursor = 1
 
+" Start with GitHub Copilot disabled
+let g:copilot_enabled = 0
+let g:copilot_toggle = 0
+
+" Map ` in normal mode to toggle Copilot on/off
+nnoremap ` :call ToggleCopilot()<CR>
+
+function! ToggleCopilot()
+  if g:copilot_toggle
+    let g:copilot_enabled = 0
+    let g:copilot_toggle = 0
+    echo "Copilot OFF"
+  else
+    let g:copilot_enabled = 1
+    let g:copilot_toggle = 1
+    echo "Copilot ON"
+  endif
+endfunction
+
 " ============================
 " 42 Norminette Integration
 " ============================
