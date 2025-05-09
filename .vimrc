@@ -56,7 +56,7 @@ Plug 'nordtheme/vim'
 " Plug 'vim-airline/vim-airline'
 
 " Essential completion plugin (for better completion experience)
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
