@@ -100,16 +100,48 @@ Uses the `nord` colorscheme with overridden highlights for vivid C development c
 
 ---
 
-## ✅ Installation
+## ✅ Installation Guide (If you don't have a vim configuration installed such as SpaceVim, in that case, you need to remove that configuration first)
 
-1. Save the Vim configuration in `~/.vimrc`.
-2. Open Vim and run:
-```vim
-:PlugInstall
-```
-3. Done!
+Follow these steps to set up your custom Vim configuration:
 
----
+1. **Make sure `vim-plug` is installed**
+   Run the following command to check:
+
+   ```bash
+   ls ~/.vim/autoload/plug.vim
+   ```
+
+   If the file does **not** exist, install it with:
+
+   ```bash
+   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   ```
+
+2. **Clone this repository**
+   Use `git` to clone the configuration files:
+
+   ```bash
+   git clone https://github.com/your-username/Vim42.git
+   cd Vim42
+   ```
+
+3. **Move the `.vimrc` file to your home directory**
+
+   ```bash
+   mv .vimrc ~/
+   ```
+
+4. **Install the plugins**
+   Open Vim and run the following command:
+
+   ```vim
+   :PlugInstall
+   ```
+
+5. ✅ You're all set!
+   Your Vim is now configured with your custom settings and plugins.
+
 
 ## 🧰 Recommended Tools
 
@@ -120,3 +152,5 @@ Disclaimers:
 - This configuration was tailored by students and is not an official 42 configuration.
 - This configuration is a work in progress and may not be fully optimized. Contributions and suggestions are welcome!
 ```
+
+Made with love @ 42Amman
