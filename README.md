@@ -123,7 +123,7 @@ Follow these steps to set up your custom Vim configuration:
    Use `git` to clone the configuration files:
 
    ```bash
-   git clone https://github.com/your-username/Vim42.git
+   git clone https://github.com/malhyasa/Vim42.git
    cd Vim42
    ```
 
